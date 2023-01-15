@@ -5,6 +5,8 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.RadioButton
 import androidx.recyclerview.widget.RecyclerView
+import com.example.quizapp.R
+import com.example.quizapp.util.RadioClickInterface
 
 class RBQuestionAdapter(
     private val options: MutableList<String> = mutableListOf(),

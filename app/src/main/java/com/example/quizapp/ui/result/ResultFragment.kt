@@ -1,7 +1,20 @@
 package com.example.quizapp.ui.result
 
+import android.content.Intent
+import android.os.Bundle
+import android.util.Log
+import android.view.View
+import androidx.fragment.app.Fragment
+import androidx.lifecycle.ViewModelProvider
+import com.example.quizapp.R
+import com.example.quizapp.data.QuizFakeData
+import com.example.quizapp.databinding.FragmentResultBinding
+import com.example.quizapp.ui.SplashActivity
+import com.example.quizapp.viewmodel.AnswerViewModel
+import dagger.hilt.android.AndroidEntryPoint
+
 @AndroidEntryPoint
-class ResultFragment : Fragment(R.layout.fragment_result), OnClickListener {
+class ResultFragment : Fragment(R.layout.fragment_result), View.OnClickListener {
 
     private var sizeOfData: Int = 0
     private lateinit var binding: FragmentResultBinding

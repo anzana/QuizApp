@@ -2,6 +2,10 @@ package com.example.quizapp.di
 
 import android.app.Application
 import androidx.room.Room
+import com.example.quizapp.constants.Constant.DB_NAME
+import com.example.quizapp.database.QuizDatabase
+import com.example.quizapp.repo.QuizRepository
+import com.example.quizapp.repo.QuizRepositoryImpl
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

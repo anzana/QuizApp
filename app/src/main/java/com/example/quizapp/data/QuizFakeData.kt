@@ -1,6 +1,5 @@
 package com.example.quizapp.data
 
-import com.example.quizapp.constants.Constant.IS_CHECK_BOX
 import com.example.quizapp.constants.Constant.IS_RADIO_BUTTON
 
 
@@ -18,29 +17,29 @@ class QuizFakeData {
                     "an operating system",
                     "",
                     "",
-                    mutableListOf("an operating system","a web browser", "a web server", "None of the above")
+                    mutableListOf("an operating system","a web browser", "a web server", "None")
                 ),
                 Quiz(
                     2,
-                    "2. Under which of the following Android is licensed?",
+                    "2. How to move services to foreground in android?",
                     IS_RADIO_BUTTON,
-                    "The Android platform was released under the Apache 2.0 license, and it is responsible for the copyright of the Android Open Source project.",
-                    "c",
-                    "Apache/MIT",
+                    "We have to call  startFordgroud(int id, Notification notification) to make services as foreground services. When it comes to foreground, it will show a notification.",
+                    "d",
+                    " startFordgroud(int id, Notification notification)",
                     "",
                     "",
-                    mutableListOf("OSS","Sourceforge","Apache/MIT","None of the above")
+                    mutableListOf("Services always work in Foreground only","No, we can't do this query","Using startService(Intent intent)"," startFordgroud(int id, Notification notification)")
                 ),
                 Quiz(
                     3,
-                    "3. For which of the following Android is mainly developed?",
+                    "3. What is broadcast receiver in android?",
                     IS_RADIO_BUTTON,
-                    "Android is a software package and a Linux-based operating system specially designed for touch-screen mobile devices like smartphones and tablets.",
-                    "d",
-                    "Mobile devices",
+                    "It is a main component of android. It reacts on the system broadcast announcements, and it acts as a gateway between outside application environment with your application.",
+                    "a",
+                    "It will react on broadcast announcements.",
                     "",
                     "",
-                    mutableListOf("Servers","Desktops","Laptops","Mobile devices")
+                    mutableListOf("It will react on broadcast announcements","It will do background functionalities as services","It will pass the data between activities","None")
                 ),
                 Quiz(
                     4,
@@ -55,14 +54,14 @@ class QuizFakeData {
                 ),
                 Quiz(
                     5,
-                    "5. Android is based on which of the following language?",
+                    "5. How to access the context in android content provider?",
                     IS_RADIO_BUTTON,
-                    "Java language is mainly used to write the android code even though other languages can be used.",
-                    "a",
-                    "Java",
+                    "The getContext() method is used in onCreate() method and getApplicationContext() can be used anywhere in an application." ,
+                    "d",
+                    "A & C",
                     "",
                     "",
-                    mutableListOf("Java","C++","Python","C")
+                    mutableListOf("Using getContext() in onCreate()","Using intent()","Using getApplicationContext() at anywhere in an application","D")
                 ),
                 Quiz(
                     6,
@@ -77,61 +76,28 @@ class QuizFakeData {
                 ),
                 Quiz(
                     7,
-                    "7. What does API stand for?",
+                    "7. What is singleton class in android?",
                     IS_RADIO_BUTTON,
-                    "API stands for application program interface. It is a set of routines, protocols, and tools for building software and applications.",
+                    "There is only an object which can be accessed by all other class.",
                     "a",
-                    "Application Programming Interface",
+                    "A class that can create only one object",
                     "",
                     "",
-                    mutableListOf("Application Programming Interface","Android Programming Interface","Android Page Interface", "Application Page Interface")
+                    mutableListOf("A class that can create only one object","Anonymous class","Java class", "Manifest file")
                 ),
                 Quiz(
                     8,
-                    "8. How can we kill an activity in android?",
-                    IS_CHECK_BOX,
-                    "The finish() method is used to close the activity. Whereas the finishActivity(int requestCode) also closes the activity with requestCode.",
-                    "ab",
-                    "Using finish() method\nUsing finishActivity(int requestCode)",
+                    "10.  How to fix crash using log cat in android?",
+                    IS_RADIO_BUTTON,
+                    "Using with log cat, we can find the exception, which has occurred along with the line number. Using of line number, we can find the errors.",
+                    "b",
+                    "log cat contains the exception name along with the line number",
                     "",
                     "",
-                    mutableListOf("Using finish() method","Using finishActivity(int requestCode)","Neither (a) nor (b)")
+                    mutableListOf("Gmail","log cat contains the exception name along with the line number","Google search", "None")
                 ),
                 Quiz(
                     9,
-                    "9. On which of the following, developers can test the application, during developing the android applications?",
-                    IS_CHECK_BOX,
-                    "We can use the Android emulator, physical android phone, or third-party emulator as a target device to execute and test our Android application.",
-                    "abc",
-                    "Third-party emulators\nEmulator included in Android SDK\nPhysical android phone",
-                    "",
-                    "",
-                    mutableListOf("Third-party emulators","Emulator included in Android SDK","Physical android phone")
-                ),
-                Quiz(
-                    10,
-                    "10. Which of the following is not an activity lifecycle callback method?",
-                    IS_RADIO_BUTTON,
-                    "onBackPressed() method is not an activity lifecycle callback method",
-                    "d",
-                    "onBackPressed() method",
-                    "",
-                    "",
-                    mutableListOf("onClick() method","onCreate() method","onStart() method","onBackPressed() method")
-                ),
-                Quiz(
-                    11,
-                    "11. Which of the following is a dialog class in android?",
-                    IS_CHECK_BOX,
-                    "All of the above are Dialog classes",
-                    "abc",
-                    "AlertDialog\nDatePicker Dialog\nProgressDialog",
-                    "",
-                    "",
-                    mutableListOf("AlertDialog","DatePicker Dialog","ProgressDialog")
-                ),
-                Quiz(
-                    12,
                     "12. Which of the following android component displays the part of an activity on screen?",
                     IS_RADIO_BUTTON,
                     "Android Fragment is the part of activity; it is also known as sub-activity. There can be more than one fragment in an activity. Fragments represent multiple screens inside one activity.",
@@ -142,7 +108,7 @@ class QuizFakeData {
                     mutableListOf("View","Manifest","Gradle","Fragment")
                 ),
                 Quiz(
-                    13,
+                    10,
                     "13. Which of the following is the parent class of Activity?",
                     IS_RADIO_BUTTON,
                     "The android Activity is the subclass of ContextThemeWrapper class. Android Activity Lifecycle is controlled by 7 methods of android.app.Activity class. An activity is a single screen in android. It is like a window or frame of Java.",
@@ -153,18 +119,7 @@ class QuizFakeData {
                     mutableListOf("context","object","contextThemeWrapper","None of the above")
                 ),
                 Quiz(
-                    14,
-                    "14. Which of the following features are updated in Android 4.1(Jelly Bean)?",
-                    IS_CHECK_BOX,
-                    "Android 4.1(Jelly Bean) updates to following features: smoother user interface, enhance accessibility, expandable notification, fixed bug on Nexus 7, one-finger gestures to expand/collapse notifications, lock screen improvement, multiple user accounts (tablets only), new clock application, Bluetooth low energy support, volume for incoming call, 4K resolution support, native emoji support, bug fixes for the Nexus 7 LTE.",
-                    "abc",
-                    "User Interface\nLock screen improvement\nNew clock application",
-                    "",
-                    "",
-                    mutableListOf("User Interface","Lock screen improvement","New clock application")
-                ),
-                Quiz(
-                    15,
+                    11,
                     "15. Which of the following method is used by services to clean up any services?",
                     IS_RADIO_BUTTON,
                     "The onDestroy() method can be used by services to clean up any resources like receivers, threads, registered listeners, etc.",

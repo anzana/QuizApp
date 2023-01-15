@@ -6,9 +6,15 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.example.quizapp.R
 import com.example.quizapp.data.Quiz
+import com.example.quizapp.databinding.FragmentRadioButtonQuestionBinding
+import com.example.quizapp.util.RadioClickInterface
+import com.example.quizapp.viewmodel.QuizViewModel
+import com.google.gson.Gson
+import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
-class RadioButtonQuestionFragment : Fragment(R.layout.fragment_radio_button_question), RadioClickInterface {
+class RadioButtonQuestionFragment : Fragment(R.layout.fragment_radio_button_question),
+    RadioClickInterface {
     private lateinit var quiz: Quiz
     private lateinit var viewModel: QuizViewModel
     private lateinit var binding: FragmentRadioButtonQuestionBinding

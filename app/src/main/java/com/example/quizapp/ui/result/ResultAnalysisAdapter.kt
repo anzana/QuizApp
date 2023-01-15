@@ -1,5 +1,14 @@
 package com.example.quizapp.ui.result
 
+import android.view.LayoutInflater
+import android.view.ViewGroup
+import androidx.recyclerview.widget.DiffUtil
+import androidx.recyclerview.widget.RecyclerView
+import com.example.quizapp.R
+import com.example.quizapp.data.Quiz
+import com.example.quizapp.databinding.ItemResultAnalysisBinding
+import com.example.quizapp.util.DiffUtilCallbackImpl
+
 class ResultAnalysisAdapter(
     private val quizList: MutableList<Quiz> = mutableListOf()
 ): RecyclerView.Adapter<ResultAnalysisAdapter.ResultAnalysisViewHolder>() {

@@ -5,6 +5,7 @@ import androidx.room.RoomDatabase
 import androidx.room.TypeConverters
 import com.example.quizapp.data.Quiz
 import com.example.quizapp.data.QuizDAO
+import com.example.quizapp.util.Converter
 
 @Database(
     entities = [Quiz::class],

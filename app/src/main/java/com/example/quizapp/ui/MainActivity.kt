@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.quizapp.R
 import com.example.quizapp.data.QuizFakeData
 import com.example.quizapp.database.QuizDB
+import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.MainScope
 import kotlinx.coroutines.launch

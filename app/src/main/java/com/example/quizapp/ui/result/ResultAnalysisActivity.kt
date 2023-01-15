@@ -1,5 +1,13 @@
 package com.example.quizapp.ui.result
 
+import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
+import androidx.activity.viewModels
+import com.example.quizapp.R
+import com.example.quizapp.databinding.ActivityResultAnalysisBinding
+import com.example.quizapp.viewmodel.QuizViewModel
+import dagger.hilt.android.AndroidEntryPoint
+
 @AndroidEntryPoint
 class ResultAnalysisActivity : AppCompatActivity(R.layout.activity_result_analysis) {
 
@@ -30,6 +38,3 @@ class ResultAnalysisActivity : AppCompatActivity(R.layout.activity_result_analys
         }
     }
 }
-Footer
-© 2023 GitHub, Inc.
-Footer navigation

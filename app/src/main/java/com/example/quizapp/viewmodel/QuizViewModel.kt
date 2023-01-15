@@ -1,16 +1,19 @@
-package com.example.quizapp.`view-model`
+package com.example.quizapp.viewmodel
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import androidx.lifecycle.viewModelScope
+import com.example.quizapp.data.Quiz
+import com.example.quizapp.repo.QuizRepository
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
 @HiltViewModel
-class AnswerViewModel @Inject constructor(
-    private val repository: QuizRepositoryImpl
+class QuizViewModel @Inject constructor(
+    private val repository: QuizRepository
 ) : ViewModel(){
 
     private val _data: MutableLiveData<List<Quiz>> = MutableLiveData()
@@ -29,6 +32,12 @@ class AnswerViewModel @Inject constructor(
     fun resetDatabase(newList: MutableList<Quiz>) {
         viewModelScope.launch(Dispatchers.IO) {
             _data.postValue(newList)
+        }
+    }
+
+    fun saveUserAnswer(quiz: Quiz) {
+        viewModelScope.launch(Dispatchers.IO) {
+            repository.insertQuiz(quiz)
         }
     }
 }

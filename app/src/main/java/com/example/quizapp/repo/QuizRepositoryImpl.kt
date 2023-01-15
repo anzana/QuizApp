@@ -3,6 +3,7 @@ package com.example.quizapp.repo
 import com.example.quizapp.data.Quiz
 import com.example.quizapp.data.QuizDAO
 import com.example.quizapp.database.QuizDatabase
+import javax.inject.Inject
 
 class QuizRepositoryImpl @Inject constructor(
     private val db: QuizDatabase

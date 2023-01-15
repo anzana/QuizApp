@@ -2,14 +2,19 @@ package com.example.quizapp.ui.home
 
 import android.content.Context
 import android.content.Intent
+import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
+import androidx.lifecycle.ViewModelProvider
 import com.example.quizapp.R
 import com.example.quizapp.data.QuizFakeData
+import com.example.quizapp.databinding.FragmentHomeBinding
 import com.example.quizapp.ui.SplashActivity
+import com.example.quizapp.viewmodel.QuizViewModel
+import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
-class HomeFragment : Fragment(R.layout.fragment_home), OnClickListener{
+class HomeFragment : Fragment(R.layout.fragment_home), View.OnClickListener {
 
     private lateinit var _context: Context
 

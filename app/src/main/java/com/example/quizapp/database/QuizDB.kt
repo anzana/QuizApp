@@ -2,6 +2,8 @@ package com.example.quizapp.database
 
 import android.content.Context
 import androidx.room.Room
+import com.example.quizapp.constants.Constant
+import com.example.quizapp.data.QuizDAO
 
 class QuizDB(context: Context) {
 
