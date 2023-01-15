@@ -12,32 +12,32 @@
         android:theme="@style/Theme.QuizApp"
         tools:targetApi="31" >
         <activity
-            android:name=".ResultAnalysisActivity"
-            android:exported="false" >
+            android:name=".ui.result.ResultAnalysisActivity"
+            android:exported="false"
+            android:label="@string/result_analysis">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".SplashActivity"
-            android:exported="false" >
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
-            android:name=".MainActivity"
-            android:exported="true" >
+            android:name=".ui.SplashActivity"
+            android:exported="true"
+            android:theme="@style/Theme.QuizAppAssignment7.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
+        <activity
+            android:name=".ui.MainActivity"
+            android:exported="true">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+            </activity>
     </application>
 
 </manifest>
