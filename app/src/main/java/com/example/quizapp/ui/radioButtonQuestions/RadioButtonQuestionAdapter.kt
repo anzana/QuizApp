@@ -30,7 +30,6 @@ class RBQuestionAdapter(
     override fun onBindViewHolder(holder: RBQuestionViewHolder, position: Int) {
         holder.bind(options[position])
 
-        //to achieve radio behaviour these operations are performed(only one option can select)
         holder.optionRB.isChecked = position == selectedPosition;
         holder.optionRB.setOnClickListener {
             selectedPosition=  position
