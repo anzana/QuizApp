@@ -61,7 +61,7 @@ class QuizFakeData {
                     "A & C",
                     "",
                     "",
-                    mutableListOf("Using getContext() in onCreate()","Using intent()","Using getApplicationContext() at anywhere in an application","D")
+                    mutableListOf("Using getContext() in onCreate()","Using intent()","Using getApplicationContext() at anywhere in an application","A & C both")
                 ),
                 Quiz(
                     6,
@@ -72,7 +72,7 @@ class QuizFakeData {
                     "Android Package Kit",
                     "",
                     "",
-                    mutableListOf("Android Phone Kit","Android Page Kit","Android Package Kit")
+                    mutableListOf("Android Phone Kit","Android Page Kit","Android Package Kit", "Application Programming Interface")
                 ),
                 Quiz(
                     7,
